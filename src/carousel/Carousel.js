@@ -798,7 +798,7 @@ export default class Carousel extends Component {
         } : undefined;
 
         return (
-            <Animated.View style={[slideStyle, animatedStyle]}>
+            <Animated.View style={[slideStyle, animatedStyle]} pointerEvents="box-none">
                 { renderItem({ item, index }, parallaxProps) }
             </Animated.View>
         );
